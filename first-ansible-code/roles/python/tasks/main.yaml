@@ -1,0 +1,8 @@
+---
+- name: Install Python
+  become: true
+  apt:
+    name: 
+       - python3-pip
+
+    update_cache: yes  

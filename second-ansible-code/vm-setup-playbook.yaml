@@ -1,0 +1,8 @@
+---
+- name: Example Ansible Playbook
+  hosts: aws-server  
+  remote_user: ubuntu
+  become: true      
+  roles:
+    - directory
+

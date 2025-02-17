@@ -1,0 +1,16 @@
+---
+- name: Create Directory
+  file:
+    path: /home/ubuntu/ansible 
+    state: directory
+
+- name: Create an Empty File Inside Directory
+  file:
+    path: /home/ubuntu/ansible/example.txt
+    state: touch
+
+- name: Create a File With Content Inside Directory
+  copy:
+   content: "Hello, this is a sample file."
+   dest: /home/ubuntu/ansible/sample.txt    
+
